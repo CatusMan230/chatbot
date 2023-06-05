@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "chatbot-1682015178882",
+  "private_key_id": "f479b2ab2de13630c4c39c16599f93908ae6d199",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0VBO+JmcubFS3\nHV1hz/R7J1H2yIR0TiHaqXlAcp2oa5tRf66jhFTCQQvo7InHfnl+qhwL3fyB68dg\nGSbGwrUwIqO32Z6axnLPsS2OzgWTzsPwgR09p1g/AIu9syPkjZVVFRsTlnykIzGU\nfVE5NY4sNIXROpSQn1b+mh+PpX2lCgKGSU4Ewp8ASAps7Zb0NdZ1dX6hrLPoC+33\nAuF8+qBXZMQ7K3yx/BvW/LTTLJwrodv0YqTocSJd47JjpI/VYiaaFdElaU+Q40dy\n7au8d5oksGm/Tt4B+H+efGtGW9J+SGpg955ZSJ2iN5LG/AtQqwMOkIrOxVSvqkbu\noiEndumNAgMBAAECggEAB0HY946ZGXOvpxzt7KlPWAN5l3pzZjDcyO2IHTFfqe8G\nta1zTE5fkN/ISGv4kYhEAHZ9IXciGeJwyCvK9TXRz+mc+CGwcd8psLUbNcOR0uR/\n2zZ/BEOvV/3AIfbLK4ANMfri95NXWc22yZiPg8NlgN7uQcDfSMC44g821POejl06\n+C6TNn4LrKn8dGYJ6SuL36WzF1/5non282Mz/gKIcB4OEHhlGam/5/4QNAXs0LS+\nnSJIlOk0PM848cMe/0pKj4DcbD/gRGI7jw083tUd71wO+iGxR1nH3XQ6N05f48eH\nsl18cvek6oCdiLl3yWvS9Ul7iwxWlPj0u5yjb+7EiwKBgQDZi8umtr58CHqX/rac\nqGsZnzL1t/PG7KRFbxaqdbuXfhPgObKa1oaKczlC1PiCDdPXcI03dwJYmVzb4eRc\n7g6rIV3rF3bUOtiMgChqATZayekwmVV9LKXrFuLFzzcE1xw4x9duoUBOSz22ydcF\nvy8a9443W6iXhaNXQn58BHCAuwKBgQDUNCQf2UZElFjpuv262JV+v0w3wyJJYiLw\nkKSxNUytQbTYshRqqPQIULGdkLSglSLd8dztyceVyjVtV5I3CY+T83Xa+o3soVyb\neQbH6Y3y31EEnpryLcnZFLgCl79nSV7QTdYx6ENVrty8wCQlqG2mdyeEXZ/nsg4l\nuqmV17veVwKBgEsNcbsYfOspubHKjJHLgPeb9ubTCeVtKtdRlg5FA+0l8BGBll7Y\n+B231t95viqQPq+rAu1Jv6N1dZXefvyYnLLplg9PTw21J5SBem/n7yqvUiYUIGxJ\nBQzwHliEPsUKuY/VUju2ogrg5m+zft1ashOpqITsuGNeFZY7OIvstCuVAoGABDMX\n9+1j352T+OQze0woAT8l8gCRoCQqDtq996fXYaJoQtWbY9T+J1/5c+XWPUtWSlAs\nECSrJ4K99fECusYcqk/qKDBHOMSkwYruoGw12/Whc9bzuBFB6mLnlV2NcyzXjIXN\n1GUFWB/CzJV84aXorZ+0D4GO1ZYHg6WjD40acbcCgYEAs7vq25ucPsO5Lv2ZWl1a\nopOWTvhlYMibwyrauKkcqXz6JeBsi+GVdeSsl+wqFdc093KYmrstxcteT9vELIEw\n9XRofKXXVkWYONbbsi392t2jzy3CISTHHleWgLvm+r2Jc8LRAAyrIra3uAjcv+Ly\nVYvNpjyjujcFes0ZqkzEZ5I=\n-----END PRIVATE KEY-----\n",
+  "client_email": "oliver-kvarda@chatbot-1682015178882.iam.gserviceaccount.com",
+  "client_id": "114852504020660877673",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/oliver-kvarda%40chatbot-1682015178882.iam.gserviceaccount.com"
+}

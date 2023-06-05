@@ -1,0 +1,50 @@
+AIzaSyCRBHQCm1OLF7pocJuHlC3JYy9MGZhHV70       custom search engine API
+
+AIzaSyAess9gEe7sfeZEH1oZWMAtr34wSDTReW4       knowledge graph API
+
+72bf95bd9773c4858       search engine ID
+
+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         GPT3 API key
+      
+
+
+if __name__ == '__main__':
+    chat()
+
+curl https://api.openai.com/v1/chat/completions 
+  -H "Content-Type: application/json" 
+  -H "Authorization: Bearer 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" 
+  -d '{
+     "model": "gpt-3.5-turbo",
+     "messages": [{"role": "user", "content": "Say this is a test!"}],
+     "temperature": 0.7
+   }'
+
+
+
+
+ # If no answer found using the Knowledge Graph API, use GPT-3 to generate a response
+    prompt = "Answer the following question: " + question
+    completions = openai.Completion.create(
+        engine="davinci",
+        prompt=prompt,
+        max_tokens=1024,
+        n=1,
+        stop=None,
+        temperature=0.5,
+    )
+    if len(completions.choices) > 0:
+        answer = completions.choices[0].text
+        return answer.strip()
+
+
+def get_answer_gpt3(prompt):
+    response = openai.Completion.create(
+        engine="davinci",
+        prompt=prompt,
+        max_tokens=1024,
+        n=1,
+        stop=None,
+        temperature=0.5,
+    )
+    return response.choices[0].text.strip()

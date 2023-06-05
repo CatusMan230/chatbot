@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style_1.css') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/pictures/logo.png">
+    <title>ChatFlow</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><b><a href="">ChatFlow</a></b></li>
+            <li><a href="#"></a></li>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+        </ul>
+    </nav>
+    <div class="chat-container">
+        <div class="chat-header">
+          <h1><br>ChatFlow</h1>
+        </div>
+        <div class="chat-body">
+            <div class="chat-messages">
+                <div class="chat-message bot">
+                  <p>Hello! How can I help you today?</p>
+                </div>
+                <div id="answer-container"></div>
+              </div>
+              
+          </div>
+          <div class="chat-input">
+            <input type="text" placeholder="Type your message here..." id="user-input">
+            <button onclick="getAnswer()">Send</button>
+          </div>
+        </div>
+      </div>
+
+    <script>
+function getAnswer() {
+  var question = document.getElementById('user-input').value;
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      var response = JSON.parse(xhr.responseText);
+      showAnswer(question, response.answer);
+    }
+  };
+  xhr.open('GET', '/answer?question=' + encodeURIComponent(question), true);
+  xhr.send();
+}
+
+
+function showAnswer(question, answer) {
+  var chatMessages = document.querySelector('.chat-messages');
+  
+  // Create a new chat message element for the user's question
+  var questionMessage = document.createElement('div');
+  questionMessage.classList.add('chat-message', 'user');
+  questionMessage.innerHTML = '<p>' + question + '</p>';
+  chatMessages.appendChild(questionMessage);
+  
+  // Create a new chat message element for the bot's answer
+  var answerMessage = document.createElement('div');
+  answerMessage.classList.add('chat-message', 'bot');
+  answerMessage.innerHTML = '<p>' + answer + '</p>';
+  chatMessages.appendChild(answerMessage);
+}
+
+
+    </script>
+</body>
+</html>

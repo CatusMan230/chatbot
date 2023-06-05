@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">    
+    <link rel="shortcut icon" type="image/x-icon" href="../static/pictures/logo.png">  
+    <title>ChatFlow</title>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+      <div class="logo">
+        <a href="#home">ChatFlow </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contact-us">Contact</a></li>
+        <!--<li><a href="/login">Login</a></li>
+        <li><a href="/signup">Sign up</a></li>-->
+        <li><a href="/chat">Chat</a></li>
+      </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="banner"id ="home">
+      <div class="banner-text">
+        <h1>Welcome to ChatFlow</h1>
+        <p>A smart chatbot for all your needs.</p>
+        <button class="get-started-btn"><a href="/chat">Get Started</a></button>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about-us">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+            Our chatbot is designed to answer questions by searching the internet for information, using natural language processing, and machine learning algorithms.
+            Our chatbot is built using a number of libraries and tools including Flask, requests, nltk, numpy, and openai.
+            We also use the Google API for search and Google Knowledge Graph API for answering questions.
+            Our chatbot is constantly learning and improving. We use machine learning algorithms to improve the accuracy of the answers provided by our chatbot.
+            Additionally, we have built a feedback mechanism that allows users to rate the accuracy of the answers provided by our chatbot.
+            This feedback mechanism helps us to further improve the accuracy of our chatbot.
+            We hope you enjoy using our chatbot and find it useful.
+            If you have any questions or feedback, please feel free to contact us.
+        </p>
+      <!-- <button>Learn More</button>-->
+      </div>
+
+    </section>
+
+  <section class="contact" id="contact-us">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Chat Section -->
+<section class="chat">
+  <h2>Chat with Us</h2>
+  <div class="chat-container">
+    <div class="chat-window">
+      <div class="chat-bubble">
+        <p>BotFlow:Hello, how can I assist you today?</p>
+      </div>
+      <div class="chat-bubble">
+        <p>You:I would like to book a flight to New York.</p>
+      </div>
+      <div class="chat-bubble">
+        <p>BotFlow:Sure, when would you like to travel and from where?</p>
+      </div>
+      <div class="chat-bubble">
+        <p>You:I would like to travel on 15th May from London.</p>
+      </div>
+      <div class="chat-bubble">
+        <p>BotFlow:Great, let me check for available flights.</p>
+      </div>
+      <div class="chat-bubble">
+        <p>BotFlow:We have a flight at 10:00 AM on 15th May from London. Would you like to book it?</p>
+      </div>
+      <div class="chat-bubble">
+        <p>You:Yes, please book it for me.</p>
+      </div>
+      <div class="chat-bubble">
+        <p>BotFlow:Alright, your flight has been booked. Thank you for using Chatbot!</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+  
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms and Conditions</a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 ChatFlow. All Rights Reserved.</p>
+      </div>
+    </footer>
+    
+      
+                </form>
+            </section>
+        </main>
+
+
+    <!-- Smooth transport-->
+    <script>
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });</script>
+    
+</body>
+</html>
